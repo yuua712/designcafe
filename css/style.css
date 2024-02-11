@@ -30,6 +30,7 @@
 .main {
     background-color: #E8D9BF;
     padding: 0 10px;
+    box-sizing: border-box;
 }
 
 #section1 {
@@ -176,5 +177,48 @@
     margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 40px;
+}
+
+.map {
+    height: 100vh;
+    height: 471px;
+    filter: grayscale(100%) invert(92%) contrast(83%);
+    width: 100%;
+    vertical-align: bottom;
+}
+
+footer {
+    background-color: #fff;
+}
+
+.section7 {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.section7-1 h2 {
+    width: 226px;
+    margin-right: 65px;
+}
+
+.section7-2 p {
+    font-size: 20px;
+    line-height: 1.05;
+    padding: 10px;
+}
+
+.section7-3 p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 2.18;
+    padding: 80px 0;
+}
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 125px;
 }
 
