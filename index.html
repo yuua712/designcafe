@@ -6,6 +6,7 @@
     <title>DESIGN CAFE</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header id="header">
@@ -25,8 +26,23 @@
                 </ul>
             </nav>
         </div>
+        <div class="hamburger">
+            <span></span>
+        </div>
+        <nav class="header__nav-sp">
+            <ul>
+                <li><a href="#aboutus">ABOUT US</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#event">EVENT</a></li>
+                <li><a href="#access">ACCESS</a></li>
+            </ul>
+        </nav>
         <div class="slider">
-            <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子の写真">
+            <picture>
+                <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子の写真">
+            </picture>
         </div>
     </header>
     <div class="main">
@@ -45,7 +61,10 @@
         </section>
         <section id="aboutus">
             <div class="section2">
-                <img src="./images/pc_about-100.jpg" alt="コーヒーで乾杯">
+                <picture>
+                    <source srcset="./images/about_us@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/pc_about-100.jpg" alt="コーヒーで乾杯">
+                </picture>
             </div>
             <div class="section2-1">
                 <div class="section-title">
@@ -57,6 +76,25 @@
                     <br>
                     こだわりのコーヒー</h3>
                 <p>サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p>
+            </div>
+            <div class="section2-spver">
+                <div class="section2-1-sp">
+                    <div class="section-title-sp">
+                        <h2>
+                            <img src="./images/about_us@2x.png" alt="ABOUTUS">
+                        </h2>
+                    </div>
+                    <div class="section2-sp">
+                        <picture>
+                            <source srcset="./images/about_us@2x-100.jpg" media="(max-width:767px)">
+                            <img src="./images/pc_about-100.jpg" alt="コーヒーで乾杯">
+                        </picture>
+                    </div>
+                    <h3>私たちが提供する
+                        <br>
+                        こだわりのコーヒー</h3>
+                    <p>サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p>
+                </div>
             </div>
         </section>
         <section id="menu">
@@ -158,5 +196,14 @@
             </a>
         </div>
     </footer>
+
+    <script>
+        $(function(){
+            $(".hamburger").on("click",function(){
+                $(".hamburger").toggleClass("open");
+                $(".header__nav-sp").fadeToggle();
+            })
+        })
+    </script>
 </body>
 </html>
